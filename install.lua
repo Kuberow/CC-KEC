@@ -1,0 +1,5 @@
+shell.run("wget", "https://raw.github.com/Kuberow/CC-KEC/main/startup.lua", "/startup.lua")
+fs.makeDir("boot")
+fs.makeDir("apis")
+shell.run("wget", "https://raw.github.com/Kuberow/CC-KEC/main/boot/kernel.lua", "/boot/kernel.lua")
+shell.run("wget", "https://raw.github.com/Kuberow/CC-KEC/main/apis/controller.lua", "/apis/controller.lua")
