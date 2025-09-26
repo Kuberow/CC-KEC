@@ -13,7 +13,8 @@ api = {}
 rednet.host("KCP", id)
 
 function api.getKey()
-return rednet.receive(0.01)
+id, key = rednet.receive(0.01)
+return key
 end
 
 return api
